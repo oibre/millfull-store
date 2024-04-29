@@ -4,7 +4,7 @@ interface Props {
 	message?: string;
 }
 
-export const ComingSoonXL: React.FC<Props> = ({ message }) => {
+const ComingSoonXL: React.FC<Props> = ({ message }) => {
 	return (
 		<div className="flex h-screen flex-col items-center justify-center">
 			<h1 className="mb-8 animate-bounce text-4xl text-5xl font-bold">Coming Soon...</h1>
@@ -15,3 +15,5 @@ export const ComingSoonXL: React.FC<Props> = ({ message }) => {
 		</div>
 	);
 };
+
+export default ComingSoonXL; // Export ComingSoonXL as the default export

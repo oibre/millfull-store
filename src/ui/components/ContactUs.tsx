@@ -2,7 +2,7 @@
 
 import React, { useState, type FormEvent, type ChangeEvent } from "react";
 
-export const ContactUs = () => {
+const ContactUs = () => {
 	// Define state variables for form fields
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
@@ -93,3 +93,4 @@ export const ContactUs = () => {
 		</form>
 	);
 };
+export default ContactUs;

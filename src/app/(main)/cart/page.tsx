@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CheckoutLink } from "./CheckoutLink";
 import { DeleteLineButton } from "./DeleteLineButton";
+import { QuantityControl } from "./QuantityControl";
 import * as Checkout from "@/lib/checkout";
 import { formatMoney } from "@/lib/graphql";
 
@@ -71,7 +72,14 @@ export default async function Page() {
 								</div>
 								<div className="flex justify-between">
 									<div className="text-sm font-bold">Qty: {item.quantity}</div>
+
 									<DeleteLineButton checkoutId={checkoutId} lineId={item.id} />
+									<QuantityControl
+										checkoutId={checkoutId}
+										lineId={item.id}
+										quantity={item.quantity}
+										variantId={item.variant.id}
+									/>
 								</div>
 							</div>
 						</li>

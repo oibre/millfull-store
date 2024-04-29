@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 interface AboutDetailsProps {
@@ -5,7 +6,7 @@ interface AboutDetailsProps {
 	description: string;
 }
 
-export const AboutDetails: React.FC<AboutDetailsProps> = ({ title, description }) => {
+const AboutDetails: React.FC<AboutDetailsProps> = ({ title, description }) => {
 	const textStyle = {
 		fontFamily: "brownRegular", // Assuming 'brownRegular' is the font family name
 		color: "#1b2211",
@@ -20,3 +21,4 @@ export const AboutDetails: React.FC<AboutDetailsProps> = ({ title, description }
 		</div>
 	);
 };
+export default AboutDetails;
