@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { NavLink } from "./NavLink";
 import { executeGraphQL } from "@/lib/graphql";
 import { MenuGetBySlugDocument } from "@/gql/graphql";
@@ -8,22 +7,14 @@ export const NavLinks = async () => {
 		variables: { slug: "navbar" },
 		revalidate: 60 * 60 * 24,
 	});
-
+	console.log(navLinks);
 	return (
 		<>
 			<NavLink href="/products">Shop All</NavLink>
-      <NavLink href={`/combos`}>
-        Combos
-      </NavLink>
-      <NavLink href={`/about`}>
-        About Us
-      </NavLink>
-      <NavLink href={`/facts`}>
-        Fact Store
-      </NavLink>
-      <NavLink href={`/contact`}>
-        Contact Us
-      </NavLink>
+			<NavLink href={`/collections/combos`}>Combos</NavLink>
+			<NavLink href={`/about`}>About Us</NavLink>
+			<NavLink href={`/fact`}>Fact Store</NavLink>
+			<NavLink href={`/contact`}>Contact Us</NavLink>
 
 			{/* {navLinks.menu?.items?.map((item) => {
 				if (item.category) {
