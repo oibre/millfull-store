@@ -4,7 +4,7 @@ query ProductListByCollection($slug: String!) {
 		description
 		seoDescription
 		seoTitle
-		products(first: 100) {
+		products(first: 100, sortBy: { direction: ASC, field: RATING }) {
 			edges {
 				node {
 					...ProductListItem

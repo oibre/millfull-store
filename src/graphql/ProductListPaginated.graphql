@@ -1,5 +1,10 @@
 query ProductListPaginated($first: Int!, $after: String) {
-	products(first: $first, channel: "default-channel", after: $after) {
+	products(
+		first: $first
+		channel: "default-channel"
+		after: $after
+		sortBy: { direction: ASC, field: RATING }
+	) {
 		totalCount
 		edges {
 			node {

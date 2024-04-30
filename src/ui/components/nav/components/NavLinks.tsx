@@ -5,24 +5,16 @@ import { NavLink } from "./NavLink";
 export const NavLinks = async () => {
 	// const navLinks = await executeGraphQL(MenuGetBySlugDocument, {
 	// 	variables: { slug: "navbar" },
-// 	revalidate: 60 * 60 * 24,
+	// 	revalidate: 60 * 60 * 24,
 	// });
 
 	return (
 		<>
 			<NavLink href="/products">Shop All</NavLink>
-      <NavLink href={`/combos`}>
-        Combos
-      </NavLink>
-      <NavLink href={`/about`}>
-        About Us
-      </NavLink>
-      <NavLink href={`/facts`}>
-        Fact Store
-      </NavLink>
-      <NavLink href={`/contact`}>
-        Contact Us
-      </NavLink>
+			<NavLink href={`/collections/combos`}>Combos</NavLink>
+			<NavLink href={`/about`}>About Us</NavLink>
+			<NavLink href={`/fact`}>Fact Store</NavLink>
+			<NavLink href={`/contact`}>Contact Us</NavLink>
 
 			{/* {navLinks.menu?.items?.map((item) => {
 				if (item.category) {

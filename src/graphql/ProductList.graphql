@@ -1,5 +1,5 @@
 query ProductList($first: Int = 9) {
-	products(first: $first, channel: "default-channel") {
+	products(first: $first, channel: "default-channel", sortBy: { field: RATING, direction: ASC }) {
 		edges {
 			node {
 				...ProductListItem
