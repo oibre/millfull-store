@@ -1,13 +1,12 @@
-import Link from "next/link";
 import { NavLink } from "./NavLink";
-import { executeGraphQL } from "@/lib/graphql";
-import { MenuGetBySlugDocument } from "@/gql/graphql";
+// import { executeGraphQL } from "@/lib/graphql";
+// import { MenuGetBySlugDocument } from "@/gql/graphql";
 
 export const NavLinks = async () => {
-	const navLinks = await executeGraphQL(MenuGetBySlugDocument, {
-		variables: { slug: "navbar" },
-		revalidate: 60 * 60 * 24,
-	});
+	// const navLinks = await executeGraphQL(MenuGetBySlugDocument, {
+	// 	variables: { slug: "navbar" },
+// 	revalidate: 60 * 60 * 24,
+	// });
 
 	return (
 		<>

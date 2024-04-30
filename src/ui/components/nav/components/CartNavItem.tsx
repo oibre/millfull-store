@@ -1,5 +1,4 @@
 import { cookies } from "next/headers";
-import { ShoppingBagIcon } from "lucide-react";
 import Link from "next/link";
 import clsx from "clsx";
 import * as Checkout from "@/lib/checkout";

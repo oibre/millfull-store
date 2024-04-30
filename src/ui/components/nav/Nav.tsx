@@ -1,5 +1,4 @@
 import { Suspense } from "react";
-import { UserMenu } from "./components/UserMenu/UserMenu";
 import { CartNavItem } from "./components/CartNavItem";
 import { NavLinks } from "./components/NavLinks";
 import { MobileMenu } from "./components/MobileMenu";

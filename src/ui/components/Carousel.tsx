@@ -13,16 +13,8 @@ const Carousel = ({ slides }: any) => {
     return () => clearInterval(intervalId); // Cleanup the interval on component unmount
   }, [slides.length]);
 
-  const goToSlide = (index) => {
+  const goToSlide = (index: React.SetStateAction<number>) => {
     setCurrentSlide(index);
-  };
-
-  const goToPrevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
-  };
-
-  const goToNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
   };
 
   return (
@@ -30,7 +22,7 @@ const Carousel = ({ slides }: any) => {
       {/* <button className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10" onClick={goToPrevSlide}>Prev</button>
       <button className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10" onClick={goToNextSlide}>Next</button> */}
       <div className="relative w-4/5 max-w-screen-md h-64 overflow-hidden">
-        {slides.map((slide, index) => (
+        {slides.map((slide: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined, index: React.Key | null | undefined) => (
           <div
             key={index}
             className={`absolute w-full h-full flex items-center justify-center transition-opacity duration-500 ${
@@ -42,7 +34,7 @@ const Carousel = ({ slides }: any) => {
         ))}
       </div>
       <div className="flex mt-4">
-        {slides.map((_, index) => (
+        {slides.map((_: any, index: any) => (
           <button
             key={index}
             className={`mx-1 w-3 h-3 rounded-full bg-gray-400 ${

@@ -14,9 +14,9 @@ export default function RootLayout(props: { children: ReactNode }) {
 
 
   const slides = [
-    <img src="https://plus.unsplash.com/premium_photo-1663933534267-fe6969cd26e1?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 1" className="w-screen h-full object-cover" />,
-    <img src="https://plus.unsplash.com/premium_photo-1663933534569-91301eaf3c1d?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 2" className="w-screen h-full object-cover" />,
-    <img src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 3" className="w-screen h-full object-cover" />,
+    <img src="https://plus.unsplash.com/premium_photo-1663933534267-fe6969cd26e1?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 1" key={1} className="w-screen h-full object-cover" />,
+    <img src="https://plus.unsplash.com/premium_photo-1663933534569-91301eaf3c1d?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 2" key={2} className="w-screen h-full object-cover" />,
+    <img src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 3" key={3} className="w-screen h-full object-cover" />,
   ];
 
 	return (
