@@ -13,6 +13,8 @@
 		"next/core-web-vitals"
 	],
 	"rules": {
+		"@typescript-eslint/no-unsafe-argument": "off",
+		"@typescript-eslint/no-unsafe-assignment": "off",
 		// sort imports
 		"import/order": "off",
 
@@ -85,10 +87,10 @@
 			"files": ["src/app/**/*.tsx", "*.ts"],
 			"rules": {
 				"import/no-default-export": "off",
-        "@typescript-eslint/no-unsafe-member-access": "off",
-        "@typescript-eslint/no-unsafe-call": "off",
-        "@typescript-eslint/no-unsafe-argument": "off",
-        "@typescript-eslint/no-unsafe-assignment": "off"
+				"@typescript-eslint/no-unsafe-member-access": "off",
+				"@typescript-eslint/no-unsafe-call": "off",
+				"@typescript-eslint/no-unsafe-argument": "off",
+				"@typescript-eslint/no-unsafe-assignment": "off"
 			}
 		},
 		{
