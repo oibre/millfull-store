@@ -1,5 +1,4 @@
 import { cookies } from "next/headers";
-import { ShoppingBagIcon } from "lucide-react";
 import Link from "next/link";
 import clsx from "clsx";
 import * as Checkout from "@/lib/checkout";
@@ -13,7 +12,7 @@ export const CartNavItem = async () => {
 	return (
 		<Link href="/cart" className="relative flex items-center bg-[#1B2211]" data-testid="CartNavItem">
 			{/* <ShoppingBagIcon className="h-6 w-6 shrink-0 text-white" aria-hidden="true" /> */}
-      <p className="text-md text-white font-regular">Cart</p>
+			<p className="text-md font-regular text-white">Cart</p>
 			{lineCount > 0 ? (
 				<div
 					className={clsx(

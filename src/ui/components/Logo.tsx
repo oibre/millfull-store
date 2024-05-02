@@ -1,11 +1,9 @@
 "use client";
-import logo from "../../log1.png"
+import logo from "../../log1.png";
 import Image from "next/image";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const companyName = "Millfull";
 
 export const Logo = () => {
 	const pathname = usePathname();
@@ -20,7 +18,7 @@ export const Logo = () => {
 	return (
 		<div className="flex items-center font-bold">
 			<Link aria-label="homepage" href="/">
-        <Image src={logo} className="h-[145px] w-[135px]" alt="" />
+				<Image src={logo} className="h-[145px] w-[135px]" alt="" />
 			</Link>
 		</div>
 	);
